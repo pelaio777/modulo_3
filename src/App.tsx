@@ -5,6 +5,7 @@ import Inventario from './Inventario/Inventario';
 import Prestamos from './Prestamos/Prestamos';
 import Devoluciones from './Devoluciones/Devoluciones';
 import Beneficiarios from './Beneficiarios/Beneficiarios';
+import Reportes from './Reportes/Reportes';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -33,9 +34,11 @@ function App() {
       case 'prestamos':
         return <Prestamos onLogout={handleLogout} onNavigate={handleNavigate} />;
       case 'devoluciones':
-        return <Devoluciones onLogout={handleLogout} onNavigate={handleNavigate} />;
+        return <Devoluciones onLogout={handleLogout} onNavigate={handleNavigate} />;  
       case 'beneficiarios':
         return <Beneficiarios onLogout={handleLogout} onNavigate={handleNavigate} />;
+      case 'reportes':
+        return <Reportes onLogout={handleLogout} onNavigate={handleNavigate} />;
       default:
         return <Dashboard onLogout={handleLogout} onNavigate={handleNavigate} />;
     }
