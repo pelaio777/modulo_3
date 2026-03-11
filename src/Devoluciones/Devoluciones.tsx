@@ -69,14 +69,14 @@ const Devoluciones: React.FC<DevolucionesProps> = ({ onLogout, onNavigate }) => 
         </div>
 
         <nav className="flex-1 space-y-1">
-          <NavItem icon={<LayoutDashboard size={20} />} label="Dashboard" onClick={() => onNavigate('dashboard')} />
-          <NavItem icon={<Package size={20} />} label="Inventario" onClick={() => onNavigate('inventario')} />
-          <NavItem icon={<ArrowLeftRight size={20} />} label="Préstamos" onClick={() => onNavigate('prestamos')} />
-          <NavItem icon={<RotateCcw size={20} />} label="Devoluciones" active onClick={() => onNavigate('devoluciones')} />
-          <NavItem icon={<Users size={20} />} label="Beneficiarios" onClick={() => {}} />
-          <NavItem icon={<BarChart3 size={20} />} label="Reportes" onClick={() => {}} />
-          <NavItem icon={<UserCircle size={20} />} label="Usuarios" onClick={() => {}} />
-        </nav>
+                  <NavItem icon={<LayoutDashboard size={20} />} label="Dashboard"  onClick={() => onNavigate('dashboard')} />
+                  <NavItem icon={<Package size={20} />} label="Inventario" onClick={() => onNavigate('inventario')} />
+                  <NavItem icon={<ArrowLeftRight size={20} />} label="Préstamos" onClick={() => onNavigate('prestamos')} />
+                  <NavItem icon={<RotateCcw size={20} />} label="Devoluciones" active onClick={() => onNavigate('devoluciones')} />
+                  <NavItem icon={<Users size={20} />} label="Beneficiarios" onClick={() => onNavigate('beneficiarios')} />
+                  <NavItem icon={<BarChart3 size={20} />} label="Reportes" onClick={() => onNavigate('reportes')} />
+                  <NavItem icon={<UserCircle size={20} />} label="Usuarios" onClick={() => onNavigate('usuarios')} />
+                </nav>
 
         <div className="mt-auto pt-6 border-t border-slate-100">
           <div className="flex items-center gap-3 px-2 mb-6">
